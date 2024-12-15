@@ -1,0 +1,77 @@
+Documentation
+NAME: B BALAJI
+DATE: 14-11-2024
+
+Description: MP3 tag reader is a software which will read and display MP3 (ID3) tag 
+             information from MP3 files. The software will be desktop based and not web 
+             based. And we have to perform operations View and Edit.
+
+Sample input: ./a.out -v sample.mp3
+sample output: 
+
+......................Select to view.........................
+Title     :   Gelupu Thalupule-My3Songs.Com
+Artist    :   Hemanth,Napilla
+ALBUM     :   Teenmaar(2011)
+Year      :   2010
+Music     :   My3Songs.Com
+Comments  :   eng.My3Songs.Com
+
+Sample input2: ./a.out -e -y 2010 sample.mp3
+sample Output2:
+
+.......................Select to edit.........................
+...........CHANGE THE YEAR.....................
+YEAR        :   2010
+...........YEAR CHANGED SUCCESSFULLY...........
+
+Sample input3: ./a.out -e -t Balaji sample.mp3
+sample output3:
+
+.......................Select to edit.........................
+...........CHANGE THE TITLE.....................
+Title        :   Balaji
+...........TITLE CHANGED SUCCESSFULLY...........
+
+Sample input4: ./a.out -e -a balayya sample.mp3
+sample output4:
+
+.......................Select to edit.........................
+...........CHANGE THE ARTIST.....................
+ARTIST        :   balayya
+...........ARTIST CHANGED SUCCESSFULLY...........
+
+Sample input5: ./a.out -e -A pushpa sample.mp3
+sample output5:
+
+.......................Select to edit.........................
+...........CHANGE THE ALBUM.....................
+ALBUM        :   pushpa
+...........ALBUM CHANGED SUCCESSFULLY...........
+
+Sample input6: ./a.out -e -m pushpa2Therule sample.mp3
+sample output6:
+
+.......................Select to edit.........................
+...........CHANGE THE MUSIC.....................
+MUSIC        :   pushpa2Therule
+...........MUSIC CHANGED SUCCESSFULLY...........
+
+Sample input6: ./a.out -e -c naasongs.com sample.mp3
+sample output6:
+
+.......................Select to edit.........................
+...........CHANGE THE COMMENTS.....................
+COMMENTS        :   naasongs.com
+...........COMMENTS CHANGED SUCCESSFULLY...........
+
+Sample input_final: ./a.out -v sample.mp3 
+Sample output_final:
+
+......................Select to view.........................
+Title     :   Balaji
+Artist    :   balayya
+ALBUM     :   pushpa
+Year      :   2010
+Music     :   pushpa2Therule
+Comments  :   naasongs.com
